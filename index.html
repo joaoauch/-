@@ -1,135 +1,91 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マイ・クリエイティブ・カラー・アドベンチャー：こども向け塗り絵ブック</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 日本語フォント（Noto Serif JPとNoto Sans JP）を読み込み -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* 本文のフォントをNoto Sans JP（ゴシック体）に設定 */
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        /* 見出しのフォントをNoto Serif JP（明朝体）に設定 */
-        h1, h2, h3, h4 {
-            font-family: 'Noto Serif JP', serif;
-        }
-        /* カスタムな、優しく上品なボタンシャドウ（リングシャドウを削除し、柔らかい影に） */
-        .btn-elegant-shadow {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マイ・クリエイティブ・カラー・アドベンチャー：こども向け塗り絵ブック</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Noto Serif JP', serif; }
+    .btn-elegant-shadow { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05); }
+  </style>
 </head>
-<!-- 背景色をソフトなオフホワイトに変更し、優しいトーンに -->
-<body class="bg-gray-50 text-slate-700">
-    
-    <!-- ヘッダー -->
-    <header class="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl md:text-2xl font-bold text-slate-800">マイ・クリエイティブ・カラー・アドベンチャー</h1>
-            <!-- CTAボタンの色を上品なピンクに変更 -->
-            <a href="https://www.amazon.co.jp/dp/B0FY635M9W" target="_blank" rel="noopener noreferrer" class="bg-pink-400 text-white font-bold py-2 px-4 rounded-full hover:bg-pink-500 transition duration-300 shadow-lg transform hover:scale-105">
-                Amazonで購入
-            </a>
-        </div>
-    </header>
+<body class="bg-rose-50 text-slate-700">
 
-    <!-- メインセクション (Hero) -->
-    <!-- 背景にソフトなミントグリーンを採用し、爽やかさと安心感を演出 -->
-    <main class="container mx-auto px-6 py-16 md:py-24 text-center bg-cyan-50 border-b border-cyan-200">
-        <!-- 派手な絵文字を控えめにし、上品な花のアイコンに変更 -->
-        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-slate-900 tracking-tight">🌸 想像力と創造性を、色と線で優雅に広げましょう</h2>
-        <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-slate-700">ページごとに楽しい「はんぶん」の絵が。のこりの「はんぶん」は、お子様の自由な発想で完成させる、創造性の旅です。4〜8歳のお子様に最適です。</p>
-        <!-- CTAボタンの色を上品なピンクに変更し、シャドウもソフトに -->
-        <a href="https://www.amazon.co.jp/dp/B0FY635M9W" target="_blank" rel="noopener noreferrer" class="bg-pink-500 text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-pink-600 transition duration-300 inline-block transform hover:scale-105 btn-elegant-shadow">
-            今すぐAmazonで手に入れる
-        </a>
-    </main>
+  <!-- Header -->
+  <header class="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-bold text-rose-700">マイ・クリエイティブ・カラー・アドベンチャー</h1>
+      <a href="https://www.amazon.co.jp/dp/B0FY635M9W" target="_blank" rel="noopener noreferrer" class="bg-rose-400 text-white font-bold py-2 px-4 rounded-full hover:bg-rose-500 transition duration-300 shadow-lg transform hover:scale-105">
+        Amazonで購入
+      </a>
+    </div>
+  </header>
 
-    <!-- 本のプレビュー -->
-    <section id="preview" class="bg-white py-16 md:py-24">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pink-600">中身を少しだけご紹介します</h3>
-                <!-- 枠線をソフトなミントグリーンに変更 -->
-                <div class="shadow-2xl rounded-2xl overflow-hidden border-8 border-cyan-300/60">
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                        <iframe 
-                            src="https://www.canva.com/design/DAG3OfFrayU/MipWR-MXPZ3gsluYTpJ9pA/view?embed"
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <main class="container mx-auto px-6 py-16 md:py-24 text-center bg-pink-100 border-b border-pink-200">
+    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-rose-800 tracking-tight">🌸 想像力と創造性を、色と線で広げよう</h2>
+    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-slate-700">ページごとに半分だけ描かれた楽しいシーン。残りはあなたの色で完成する冒険です。4〜8歳のお子様にぴったり！</p>
+    <a href="https://www.amazon.co.jp/dp/B0FY635M9W" target="_blank" rel="noopener noreferrer" class="bg-rose-500 text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-rose-600 transition duration-300 inline-block transform hover:scale-105 btn-elegant-shadow">
+      今すぐAmazonで手に入れる
+    </a>
+  </main>
 
-    <!-- 商品説明 -->
-    <section id="about" class="py-16 md:py-24 bg-gray-50">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-slate-800">創造性と思考力を育む、新しいタイプのアートブック</h3>
-                <p class="mb-4 text-slate-700 leading-relaxed">『マイ・クリエイティブ・カラー・アドベンチャー』は、単なるぬりえブックではありません。これは、お子様のそうぞうりょくとクリエイティビティのぼうけんです！ページごとに、かわいいジャングルのどうぶつやふしぎなにわなど、ゆかいなシーンの「はんぶん」がえがかれています。</p>
-                <p class="text-slate-700 leading-relaxed">のこりのはんぶんはじぶんでかくためのアウトライン。お子様自身のアイデアでシーンをかんせいさせることができます。このインタラクティブなぬりえブックは、げいじゅつてきひょうげんやびさいうんどうのスキルをのばし、質の高いスクリーンフリーの時間を過ごすための理想的なツールです。</p>
-            </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg border-l-8 border-pink-400">
-                <!-- 左側の太い線に優しいピンク色を採用 -->
-                <h4 class="text-2xl font-bold mb-6 text-center text-pink-600">✨ この一冊で伸びる大切なスキル ✨</h4>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <!-- アイコンの色をミントグリーンに変更 -->
-                        <svg class="w-6 h-6 text-cyan-500 mr-3 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5l-2.4 2.4"/><path d="M21 9l-3.5 3.5"/><path d="M9 11.5l1.5 1.5"/><path d="M3 15v3a2 2 0 002 2h3"/><path d="M12 5l2 2"/><path d="M15 8l-6 6-1.5-1.5L13.5 6"/></svg>
-                        <span class="text-slate-700">そうぞうりょくを大きくひろげる**クリエイティブなアイデア出し**。</span>
-                    </li>
-                    <li class="flex items-start">
-                        <!-- アイコンの色をミントグリーンに変更 -->
-                        <svg class="w-6 h-6 text-cyan-500 mr-3 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10h.01"/><path d="M18 10h.01"/><path d="M10 10h.01"/><path d="M14 14h.01"/><path d="M18 14h.01"/><path d="M14 18h.01"/><path d="M10 14h.01"/><path d="M10 18h.01"/><path d="M6 10h.01"/><path d="M6 14h.01"/><path d="M6 18h.01"/><path d="M18 4h2a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
-                        <span class="text-slate-700">てさきを器用に使う**びさいうんどうのスキル**をのばす。</span>
-                    </li>
-                    <li class="flex items-start">
-                        <!-- アイコンの色をミントグリーンに変更 -->
-                        <svg class="w-6 h-6 text-cyan-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="text-slate-700">デジタル機器から離れ、**集中力**を高める時間。</span>
-                    </li>
-                    <li class="flex items-start">
-                        <!-- アイコンの色をミントグリーンに変更 -->
-                        <svg class="w-6 h-6 text-cyan-500 mr-3 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" /></svg>
-                        <span class="text-slate-700">個性あふれる**世界に一つだけの作品**を完成させる喜び。</span>
-                    </li>
-                    <li class="flex items-start">
-                        <!-- アイコンの色をミントグリーンに変更 -->
-                        <svg class="w-6 h-6 text-cyan-500 mr-3 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
-                        <span class="text-slate-700">すべてのシーンがシンプルで、**初めてのお子様でも安心**して楽しめるデザイン。</span>
-                    </li>
-                </ul>
-            </div>
+  <!-- Preview -->
+  <section id="preview" class="bg-white py-16 md:py-24">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 text-rose-600">📖 本の中を少しのぞいてみよう</h3>
+        <div class="shadow-2xl rounded-2xl overflow-hidden border-8 border-rose-300/60">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe src="https://www.canva.com/design/DAG3OfFrayU/MipWR-MXPZ3gsluYTpJ9pA/view?embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- 最後のCTA（行動喚起） -->
-    <!-- 背景をソフトなミントグリーンに戻し、統一感を出す -->
-    <section class="bg-cyan-100 text-slate-800 border-t border-cyan-200">
-        <div class="container mx-auto px-6 py-16 md:py-24 text-center">
-            <h3 class="text-3xl md:text-4xl font-extrabold mb-4 text-pink-700">🎁 お子様の創造性を育む、最高の贈り物として</h3>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-slate-700">雨の日のおうち時間や、心を込めたプレゼントにも最適です。この機会に、ぬりえの新しい楽しさを体験してください。</p>
-            <!-- ボタンの色をピンクに戻し、統一感を持たせる。シャドウも強調。 -->
-            <a href="https://www.amazon.co.jp/dp/B0FY635M9W" target="_blank" rel="noopener noreferrer" class="bg-pink-500 text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-pink-600 transition duration-300 inline-block transform hover:scale-105 btn-elegant-shadow">
-                今すぐAmazonでゲット！
-            </a>
-        </div>
-    </section>
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24 bg-rose-50">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-3xl md:text-4xl font-bold mb-6 text-rose-800">創造性を育てる、新しい塗り絵体験</h3>
+        <p class="mb-4 text-slate-700 leading-relaxed">『マイ・クリエイティブ・カラー・アドベンチャー』は、子どもたちの想像力を広げるぬりえブックです。半分だけ描かれたシーンを、自分の発想で完成させましょう。</p>
+        <p class="text-slate-700 leading-relaxed">かわいい動物、ユニコーン、海の冒険、魔法の庭などが登場。芸術的表現や集中力を育てながら、楽しくスクリーンフリーな時間を過ごせます。</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg border-l-8 border-rose-400">
+        <h4 class="text-2xl font-bold mb-6 text-center text-rose-600">🌈 育まれるスキル</h4>
+        <ul class="space-y-4 text-slate-700">
+          <li>✨ そうぞうりょくとクリエイティブな発想</li>
+          <li>🎨 手先の器用さと集中力</li>
+          <li>🌸 自分だけのアートを完成させる喜び</li>
+          <li>☔ 雨の日にも楽しいアクティビティ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- フッター -->
-    <footer class="bg-white">
-        <div class="container mx-auto px-6 py-6 text-center text-slate-500 border-t border-gray-100">
-            <p>&copy; 2024 マイ・クリエイティブ・カラー・アドベンチャー. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- CTA -->
+  <section class="bg-pink-200 text-slate-800 border-t border-pink-300">
+    <div class="container mx-auto px-6 py-16 md:py-24 text-center">
+      <h3 class="text-3xl md:text-4xl font-extrabold mb-4 text-rose-800">🎁 お子様への最高のプレゼント</h3>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-slate-700">想像力を育てる特別な時間を贈りませんか？</p>
+      <a href="https://www.amazon.co.jp/dp/B0FY635M9W" target="_blank" rel="noopener noreferrer" class="bg-rose-500 text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-rose-600 transition duration-300 inline-block transform hover:scale-105 btn-elegant-shadow">
+        今すぐAmazonでゲット！
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white">
+    <div class="container mx-auto px-6 py-6 text-center text-slate-500 border-t border-gray-100">
+      <p>&copy; 2024 マイ・クリエイティブ・カラー・アドベンチャー. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
